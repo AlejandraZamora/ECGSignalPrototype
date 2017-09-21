@@ -1,0 +1,107 @@
+<div ng-include="'/app/Templates/templateInvestigator.html'"></div>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Tus Datos</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Datos personales
+                </div>
+                <div class="panel-body">
+                    <h2> Numero de Identificacion
+                        <br><br>
+                        <small> {{patient.id}} </small>
+                    </h2>
+                    <br><br>
+
+                    <h2> Nombre
+                        <br><br>
+                        <small> {{patient.name}} </small>
+                    </h2>
+                    <br><br>
+
+<h2> Role
+	                        <br><br>
+	                        <small> {{patient.role}} </small>
+	                    </h2>
+	                    <br><br>
+<h2> LastName
+	                        <br><br>
+	                        <small> {{patient.lastName}} </small>
+	                    </h2>
+	                    <br><br>
+<label><h1> Datos de Address </h1></label>
+<br><br>
+<h2> Street
+				                        <br><br>
+				                        <small> {{patient.address.street}} </small>
+				                    </h2>
+				                    <br><br>
+<h2> Zip
+				                        <br><br>
+				                        <small> {{patient.address.zip}} </small>
+				                    </h2>
+				                    <br><br>
+<h2> City
+				                        <br><br>
+				                        <small> {{patient.address.city}} </small>
+				                    </h2>
+				                    <br><br>
+<label><h1> Datos de AcademicInfo </h1></label>
+<br><br>
+<h2> LastGrade
+				                        <br><br>
+				                        <small> {{patient.academicInfo.lastGrade}} </small>
+				                    </h2>
+				                    <br><br>
+<h2> GradeDate
+				                        <br><br>
+				                        <small> {{patient.academicInfo.gradeDate | date:'yyyy-MM-dd'}} </small>
+				                    </h2>
+				                    <br><br>
+<h2> Gpa
+				                        <br><br>
+				                        <small> {{patient.academicInfo.gpa}} </small>
+				                    </h2>
+				                    <br><br>
+<h2> BirthDate
+	                        <br><br>
+	                        <small> {{patient.birthDate | date:'yyyy-MM-dd'}} </small>
+	                    </h2>
+	                    <br><br>
+<h2> Gender
+	                        <br><br>
+	                        <small> {{patient.gender}} </small>
+	                    </h2>
+	                    <br><br>
+<h2> Email
+	                        <br><br>
+	                        <small> {{patient.email}} </small>
+	                    </h2>
+	                    <br><br>
+<h2> Age
+	                        <br><br>
+	                        <small> {{patient.age}} </small>
+	                    </h2>
+	                    <br><br>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="continueUP()">Actualizar Datos</button>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
