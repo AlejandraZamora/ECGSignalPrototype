@@ -45,11 +45,11 @@ deploy:
 - provider: releases
   api_key: $GITHUB_AUTH_TOKEN
   file:
-  - "./dist/Chart.bundle.js"
-  - "./dist/Chart.bundle.min.js"
-  - "./dist/Chart.js"
-  - "./dist/Chart.min.js"
-  - "./dist/Chart.js.zip"
+  - "./dist/Chart.bundle.chart"
+  - "./dist/Chart.bundle.min.chart"
+  - "./dist/Chart.chart"
+  - "./dist/Chart.min.chart"
+  - "./dist/Chart.chart.zip"
   skip_cleanup: true
   on:
     tags: true
