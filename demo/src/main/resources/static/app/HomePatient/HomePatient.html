@@ -1,0 +1,76 @@
+<div ng-include="'/app/Templates/templatePatient.html'"></div>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Bienvenido {{patientH.name}}</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-comments fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{cantHFeedbacks}}</div>
+                            <div>{{recomendacionesHFeedbacks}}</div>
+                        </div>
+                    </div>
+                </div>
+                <a  ng-click="continueCSFeedbacks()">
+                    <div class="panel-footer">
+                        <span class="pull-left">Detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+	<div class="row">
+		<br>
+		<h2>Registros de EcgSignal</h2>
+		<br>
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    Value
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="valueEcgSignal" class="chart chart-bar"
+	    	chart-data="valueEcgSignal" chart-labels="labelsEcgSignal" chart-series="seriesEcgSignal">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	    	<div class="col-lg-4">
+	    	<div class="panel panel-default">
+	    	<div class="panel-heading">
+	                    Frequency
+	    	</div>
+	    	<div class="panel-body">
+	    	<canvas  id="frequencyEcgSignal" class="chart chart-bar"
+	    	chart-data="frequencyEcgSignal" chart-labels="labelsEcgSignal" chart-series="seriesEcgSignal">
+	    	</canvas>
+	    	</div>
+	    	<!-- /.panel-body -->
+	    	</div>
+	    	<!-- /.panel -->
+	    	</div>
+	    	<!-- /.col-lg-4 -->
+	</div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+

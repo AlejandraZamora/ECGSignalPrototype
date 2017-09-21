@@ -1,0 +1,50 @@
+<div ng-controller="templateDoctorCtrl">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Multiple Client</a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+        	<li><a ng-click="continuePerfil()"><i class="fa fa-user fa-fw"></i> Perfil </a>
+            </li>
+            <li><a ng-click="continueLogoutD()"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
+            </li>
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a ng-click="continueHomeD()"><i class="fa fa-dashboard fa-fw"></i>Inicio</a>
+                    </li>
+                    <li ng-show="FindID">
+                        <a  ng-click="continueRegistersPEcgSignal()"><i class="fa fa-bar-chart-o fa-fw"></i> Registros de EcgSignal</a>
+                    </li>
+                    <li ng-show="FindID">
+                        <a><i class="fa fa-edit fa-fw"></i> Recomendaciones</a>
+                        <ul class="nav nav-second-level">
+                        	<li>
+                        		<a ng-click="continueCommentViewFeedbacks()">Ver Comentarios Feedbacks</a>
+                        	</li>
+                        	<li>
+                        		<a ng-click="continueCommentRegisterFeedbacks()">Registrar Nuevo Comentario Feedbacks</a>
+                        	</li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+</div>
